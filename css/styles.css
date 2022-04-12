@@ -281,6 +281,10 @@ font-size: 50px;
 
 }
 
+.fondoProductos {
+    background-image: linear-gradient(rgb(228, 74, 19),rgb(228, 74, 19),rgb(190, 64, 17),rgb(163, 54, 15), black);
+
+}
 
 
 
