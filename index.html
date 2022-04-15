@@ -21,40 +21,68 @@
             </header>
         </div>
         <div class="grid-navbar">
-            <nav>
-                <ul class="menu">
-    
-                    <li class="liMenu activo">
-                        <a href="index.html">Inicio</a>
-                    </li>
-    
-                    <li class="liMenu">
-                        <a href="pages/productos.html">Productos</a> 
-                    </li>
-    
-                    <li class="liMenu">
-                        <a href="pages/contacto.html">Contacto</a>
-                    </li>
-    
-                    <li class="liMenu">
-                        <a href="pages/nosotros.html">Nosotros</a>
-                    </li>
-                
-                    <li class="liMenu">
-                        <a href="pages/carrito.html">Carrito</a>
-                    </li>
-                    
-                </ul>
-            </nav>
+            <nav class=" navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="pages/productos.html" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Productos
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                          <li><a class="dropdown-item" href="pages/productos.html">Granola</a></li>
+                          <li><a class="dropdown-item" href="pages/productos.html">Barritas</a></li>
+                          <li><a class="dropdown-item" href="pages/productos.html">Mixs</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/nosotros.html">Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="pages/carrito.html">Carrito</a>
+                      </li>
+
+                    </ul>
+                  </div>
+                </div>
+              </nav>
         </div>
         <div class="grid-main">
             <h2 class="textCenter">Ahora lo rico tambien es sano.</h2>
         
             <h3 class="textCenter">Fabricacion y venta de productos dieteticos.</h3>
         
-            <div>
-                <img class="imgIndex" src="img/BarritaConCafe.jpg" alt="">
-            </div>
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="img/BarritaConCafe.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/GranolaBowl3.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="img/BarritaConCafe.jpg" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+
         
             <div class="video">
                 <h3>Algunos beneficios sobre comer nuestros productos</h3>
