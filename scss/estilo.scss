@@ -1,9 +1,13 @@
 @import "variables";
 @import "tipografia";
+@import "maps";
+@import "extend";
+@import "mixin";
 
 $separaciones: 100px;
 $blue: #4285F4;
 $green: #33D374;
+
 
 .box_uno {
         background-color: $blue;
@@ -35,13 +39,6 @@ $green: #33D374;
 	color:yellow;
 }
 
-$mapRedes: (facebook:red,intagram:blue,twitter:yellow);
-
-@each $red, $color in mapRedes {
-    .#{$red} {
-        color: $color;
-    }
-}
 
 *{
     margin: 0;
